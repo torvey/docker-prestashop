@@ -1,3 +1,3 @@
 @echo off
 
-docker build -t docker-prestashop .
+docker build  --no-cache -t docker-prestashop .
