@@ -14,7 +14,7 @@ FROM prestashop/prestashop:1.7.7.5
 
 RUN mkdir ssl
 COPY --from=intermediate /docker-prestashop/docker/ssl/000-default.conf /ssl/000-default.conf
-COPY --from=intermediate /docker-prestashop/ssl.sh .
+COPY --from=intermediate /docker-prestashop/docker/ssl/ssl.sh .
 EXPOSE 80
 EXPOSE 443
 CMD ["bash", "ssl.sh"]
