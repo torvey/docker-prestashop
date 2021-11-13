@@ -3,3 +3,4 @@ html/upload
 html/install
 html/ssl
 html/ssl.sh
+scrapper/node_modules
