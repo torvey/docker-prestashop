@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-18 18:39:01
+/* Smarty version 3.1.39, created on 2021-11-18 19:36:19
   from 'module:psimagesliderviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61968fb5dc4b61_39104499',
+  'unifunc' => 'content_61969d233651c3_95692271',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6c2108a17c7103b6e203f4f0621d4645b56b0114' => 
     array (
       0 => 'module:psimagesliderviewstemplat',
-      1 => 1637087750,
+      1 => 1637259286,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_61968fb5dc4b61_39104499 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61969d233651c3_95692271 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="5000" data-wrap="true" data-pause="hover" data-touch="true">
     <ol class="carousel-indicators">
@@ -34,7 +34,7 @@ function content_61968fb5dc4b61_39104499 (Smarty_Internal_Template $_smarty_tpl)
           </a>
         </li>
               <li class="carousel-item " role="option" aria-hidden="true">
-          <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="https://localhost/promocje">
             <figure>
               <img src="https://localhost/modules/ps_imageslider/images/e523165a9095ab35e78cbdafdd2e3d4a32ae23f6_lampy4.jpg" alt="">
                           </figure>
