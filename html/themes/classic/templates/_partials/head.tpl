@@ -46,6 +46,18 @@
   {/block}
 {/block}
 
+{literal}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GVE67FJVL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7GVE67FJVL');
+  </script>
+{/literal}
+
 {block name='head_viewport'}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 {/block}
