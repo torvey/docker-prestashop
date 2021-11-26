@@ -3976,6 +3976,7 @@ class AdminContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 66 => 'ps_emailsubscription',
                 67 => 'ps_accounts',
                 68 => 'ps_eventbus',
+                69 => 'ps_cashondelivery',
             ],
             'ps_cache_dir' => '/var/www/html/var/cache/prod/',
             'mail_themes_uri' => '/mails/themes',
