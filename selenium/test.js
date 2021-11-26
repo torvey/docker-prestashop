@@ -24,7 +24,7 @@ const goToCart = async () => {
 };
 
 const isCartValid = async (sum) => {
-    await new Promise((r) => setTimeout(r, 1000));
+    await new Promise((r) => setTimeout(r, 2000));
     const cartCount = await driver
         .findElement(By.css(".js-subtotal"))
         .getText();
@@ -97,10 +97,11 @@ const createOrder = async () => {
     await driver
         .findElement(By.css('button[name="confirm-addresses"]'))
         .click();
+    await driver.findElement(By.css("#delivery_option_3")).click();
     await driver
         .findElement(By.css('button[name="confirmDeliveryOption"]'))
         .click();
-    await driver.findElement(By.css('input[id="payment-option-1"]')).click();
+    await driver.findElement(By.css('input[id="payment-option-2"]')).click();
     await driver
         .findElement(
             By.css('input[id="conditions_to_approve[terms-and-conditions]"]')
@@ -152,20 +153,6 @@ const ignoreProtection = async () => {
 
     await checkStatus();
 
-    // driver.close();
-    // driver.quit();
-
-    // let products2 = (await driver.findElements(By.css(".product"))).slice(0, 5);
-
-    // for (const product of products2) {
-    //     await new Promise((r) => setTimeout(r, 5000));
-    //     await actions.move({ origin: product }).perform();
-    // }
-
-    // let firstResult = await driver.wait(
-    //     until.elementLocated(By.css("h2")),
-    //     10000
-    // );
-
-    // console.log(await firstResult.getAttribute("textContent"));
+    await driver.close();
+    await driver.quit();
 })();
