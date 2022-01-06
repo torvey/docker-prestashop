@@ -8,6 +8,12 @@ services:
             - 443:443
         depends_on:
             - mysql
+        environment:
+            - PS_DEV_MODE=1
+            - DB_SERVER=mysql
+            - DB_USER=root
+            - DB_PASSWD=root
+            - DB_NAME=prestashop
 
     mysql:
         image: mariadb
