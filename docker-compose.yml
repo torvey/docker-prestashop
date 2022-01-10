@@ -4,7 +4,8 @@ services:
     prestashop:
         image: docker-prestashop
         ports:
-            # TUTAJ ZROBIĆ TEN BINDING PORTÓW
+            # - 18128:80
+            # - 18129:443
             - 80:80
             - 443:443
         depends_on:
@@ -16,25 +17,6 @@ services:
             - DB_PASSWD=root
             - DB_NAME=prestashop
 
-    mysql:
-        image: mariadb
-        # command: --default-authentication-plugin=mysql_native_password
-        volumes:
-            - ./docker/mariadb:/docker-entrypoint-initdb.d
-        environment:
-            - MYSQL_ROOT_PASSWORD=root
-            - MYSQL_DATABASE=prestashop
-
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        links:
-            - mysql
-        ports:
-            - 81:80
-        environment:
-            - PMA_HOST=mysql
-            # - PMA_USER=root
-            # - PMA_PASSWORD=root
-# networks:
-#     default:
-#         name: prestashop-net
+networks:
+    default:
+        name: prestashop-net
