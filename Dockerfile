@@ -7,11 +7,13 @@ RUN git clone https://github.com/torvey/docker-prestashop.git
 
 FROM prestashop/prestashop:1.7.7.5
 
-ARG DATABASE_HOST=mysql
-ARG DATABASE_PORT=''
+ARG DATABASE_HOST=actina15.maas
+ARG DATABASE_PORT=3306
+# UZUPEŁNIJ \/
 ARG DATABASE_NAME=prestashop
+# TO TRZEBA ZMIENIĆ NA SERWERZE
 ARG DATABASE_USER=root
-ARG DATABASE_PASSWORD=root
+ARG DATABASE_PASSWORD=student
 ARG DATABASE_PREFIX=ps_
 
 COPY --from=intermediate /docker-prestashop/html .
