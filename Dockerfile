@@ -7,8 +7,8 @@ RUN git clone https://github.com/torvey/docker-prestashop.git
 
 FROM prestashop/prestashop:1.7.7.5
 
-ARG DATABASE_HOST=actina15.maas
-ARG DATABASE_PORT=3306
+ARG DATABASE_HOST=admin-mysql_db
+ARG DATABASE_PORT=''
 ARG DATABASE_NAME=be_181291
 ARG DATABASE_USER=be_181291
 ARG DATABASE_PASSWORD=politechnika123
