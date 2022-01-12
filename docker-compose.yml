@@ -1,20 +1,15 @@
 version: "2"
 
 services:
-    prestashop:
-        image: docker-prestashop
+    teamB:
+        image: torvey/be_181291
         ports:
             - 18128:80
             - 18129:443
-        depends_on:
-            - mysql
         environment:
             - PS_DEV_MODE=1
-            - DB_SERVER=mysql
-            - DB_USER=root
-            - DB_PASSWD=root
-            - DB_NAME=prestashop
-
-networks:
-    default:
-        name: prestashop-net
+            - DB_SERVER=actina15.maas
+            - DB_USER=be_181291
+            - DB_PASSWD=politechnika123
+            - DB_NAME=be_181291
+        restart: always
